@@ -66,13 +66,10 @@ header{
     left: 2uw;
     
 }
-
-
-
 .fondo_productos{
     width: 100%;
     height: 100vh;
-    background: url(..pictures/productosmix.jpg);
+    background: url(../pictures/productosmix.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
