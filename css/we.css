@@ -67,7 +67,7 @@ header{
 
 .introduce {
     height: 400px;
-    background-image: url('/pictures/cabas1.jpg');
+    background-image: url('../pictures/cabas1.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -88,7 +88,7 @@ header{
 
 .intro_sec{
     height: 400px;
-    background-image: url('/pictures/cabas2.jpg');
+    background-image: url('../pictures/cabas2.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
