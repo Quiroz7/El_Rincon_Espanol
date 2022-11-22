@@ -1,0 +1,486 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(4,0,0,0.9);
+}
+
+.cab_nav{
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cab_nav ul{
+    display: flex;
+}
+
+.cab_nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 50px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}    
+
+.cab_nav ul li a:hover{
+    color: blue;
+}
+
+.cab_nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nomb_logo{
+    width: 330px;
+    padding: 0px 20px;
+    float: left;
+    position: relative;
+    top: 5%;
+    left: 2%;
+    color: #fff;
+    font-size: 30px; 
+}
+/*para centrarlo*/
+.logo_img{
+    
+    width: 75px;
+    position: absolute;
+    display: flex;
+    left: 2px;
+    left: 2uw;
+    
+}
+
+.contact{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #8fb408c5, #b68e0b);
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 80px;
+    
+}
+
+.contact input, textarea, select{
+    margin: 9px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #2f2e4d;
+}
+
+.contact button{
+    background-color: #b68e0bde;
+    padding: 11px;
+    font-weight: bold;
+    border: 1px solid #7b7b7d83;
+    margin-bottom: 10px;
+    width: 50%;
+    margin: 5px auto;
+    border-radius: 15px;
+    margin-top: auto;
+}
+
+.contact h1{
+    text-align: center;
+    
+    position: relative;
+    top: 2%;
+    left: 2%;
+    color: #fff;   
+}
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+    position: absolute;
+    bottom: -150;
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+.marca{
+    background-color: rgba(21, 88, 230, 0.9);
+}
+
+footer{
+    max-height: 20%;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr ) ;
+    background-color: black;
+    color: rgb(99, 7, 7);
+    margin-top: 20px;
+    border: solid  #b68e0bde;
+    margin-top: auto;
+    position: relative;
+}
+
+.information{
+    margin-left: 20px;  
+    margin-top: 20px;
+}
+
+.ubication{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+}
+
+.redes{
+    margin-right: 70px;
+    margin-top: 20px;
+}
+
+.redes a{
+    display: flex;
+    justify-content: center; 
+}
+
+.btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.btn-neon:hover{
+    background: #b68e0b;
+    box-shadow: 0 0 10px #b68e0b, 0 0 40px #b68e0b, 0 0 80px #b68e0b;
+    transition-delay: 1s;
+}
+
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#11100b );
+}
+
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#11100b);
+}
+
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,#11100b );
+}
+
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,#11100b);
+}
+
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+@media (max-width: 1285px){
+    .nomb_logo {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .cab_nav{
+        width: 100%;
+        padding: 20px;
+    }
+    
+        
+    }
+    .cab_nav ul li  {
+        font-size: 20px;
+        padding: 20px 10px;
+        
+        margin-top: 1%;
+    }
+    .contenedor  {
+        margin-top: 1rem;
+        /* top: 300px; */
+        width: 610px;
+        height: 400px; 
+    }
+    .titulo_cont{
+        font-size: 40px;
+    }
+    .parrafo_cont{
+        font-size: 35px;
+    }
+
+
+
+@media (max-width:850px ){
+    .nomb_logo {
+        font-size: 25px;
+        
+    }
+    .cab_nav{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .cab_nav ul li  {
+        font-size: 20px;
+        padding: 20px 10px;
+        
+        margin-top: 1%;
+    }
+    .contenedor  {
+        margin-top: 1rem;
+        /* top: 300px; */
+        width: 510px;
+        height: 400px; 
+    }
+    .titulo_cont{
+        font-size: 30px;
+    }
+    .parrafo_cont{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width: 600px){
+    .nomb_logo {
+        font-size: 20px;
+    }
+    .cab_nav{
+        width: 100%;
+        padding: 20px;
+    }
+    .logo_img{
+        font-size: 20px;
+        
+    }
+    .cab_nav ul li  {
+        font-size: 12px;
+        padding: 10px 10px;
+        
+        margin-top: 4%;
+    }
+    .contenedor  {
+        margin-top: 1rem;
+        /* top: 300px; */
+        width: 310px;
+        height: 500px;
+        
+        
+    }
+    .titulo_cont{
+        font-size: 30px;
+    }
+    .parrafo_cont{
+        font-size: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    
+}  
+
+
+@media  (max-width: 420px){
+    .nomb_logo {
+        font-size: 13px;
+    }
+    .cab_nav{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .cab_nav ul li  {
+        font-size: 10px;
+        padding: 8px 9px;
+        
+        margin-top: 4%;
+    }
+    .contenedor  {
+        margin-top: 1rem;
+        /* top: 200px; */
+        width: 210px;
+        height: 400px; 
+    }
+    .logo_img{
+        width: 60px;
+        height: 60px;
+        
+    }
+    .titulo_cont{
+        font-size: 20px;
+    }
+    .parrafo_cont{
+        font-size: 20px;
+    }
+    footer{
+        display: flex;
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+    .ubication iframe{
+        display: flex;
+        
+        width: 100px;
+        height: 100px;
+        
+    }
+   
+}

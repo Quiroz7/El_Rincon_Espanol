@@ -1,0 +1,342 @@
+ 
+ 
+ *{     
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(4,0,0,0.9);
+}
+
+.cab_nav{
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cab_nav ul{
+    display: flex;
+}
+
+.cab_nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 50px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+}    
+
+.cab_nav ul li a:hover{
+    color: blue;
+}
+
+.cab_nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nomb_logo{
+    width: 330px;
+    padding: 0px 20px;
+    float: left;
+    position: relative;
+    top: 5%;
+    left: 2%;
+    color: #fff;
+    font-size: 30px; 
+}
+/*para centrarlo*/
+.logo_img{
+    
+    width: 75px;
+    position: absolute;
+    display: flex;
+    left: 2px;
+    left: 2uw;
+    
+}
+
+
+
+.fondo_productos{
+    width: 100%;
+    height: 100vh;
+    background: url(/pictures/productosmix.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo_productos h1{
+    font-size: 60px;
+    color: #fff;
+}
+
+.title{
+    max-width: 1100px;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    color: rgba(180, 12, 12, 0.712);
+    padding: 70px 0px;
+    text-align: center;
+}
+
+.seccion_vi h1, .seccion_que h1, .seccion_jam h1, .seccion_oil h1{
+    font-size: 60px;
+    text-align: center;
+    padding: 400px 0px;
+    color: #000;
+}
+
+.seccion_vi{
+    background: url(/pictures/botellasmix.jpeg);
+    width: 100%;
+    height: 110vh;
+    background-position: center;
+    position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion_que{
+    background: url(/pictures/quesofull.jpg);
+    width: 100%;
+    height: 110vh;
+    background-position: center;
+    position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion_jam{
+    background: url(/pictures/jamon.jpg);
+    width: 100%;
+    height: 110vh;
+    background-position: center;
+    position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion_oil{
+    background: url(/pictures/oil.jpg);
+    width: 100%;
+    height: 110vh;
+    background-position: center;
+    position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    max-height: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr ) ;
+    background-color: black;
+    color: rgb(99, 7, 7);
+    margin-top: 20px;
+    border: solid  #b68e0bde;
+}
+
+.information{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.ubication{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.redes{
+    margin-right: 70px;
+    margin-top: 20px;
+}
+
+.redes a{
+    display: flex;
+    justify-content: center; 
+}
+
+.marca{
+    background-color: rgba(21, 88, 230, 0.9);
+    margin-top: 20px;
+}
+
+@media (max-width: 1285px){
+    .nomb_logo {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .cab_nav{
+        width: 100%;
+        padding: 20px;
+    }
+    
+        
+    }
+    .cab_nav ul li  {
+        font-size: 20px;
+        padding: 20px 10px;
+        
+        margin-top: 1%;
+    }
+    .contenedor  {
+        margin-top: 1rem;
+        /* top: 300px; */
+        width: 610px;
+        height: 400px; 
+    }
+    .titulo_cont{
+        font-size: 40px;
+    }
+    .parrafo_cont{
+        font-size: 35px;
+    }
+
+
+
+@media (max-width:850px ){
+    .nomb_logo {
+        font-size: 25px;
+        
+    }
+    .cab_nav{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .cab_nav ul li  {
+        font-size: 20px;
+        padding: 20px 10px;
+        
+        margin-top: 1%;
+    }
+    .contenedor  {
+        margin-top: 1rem;
+        /* top: 300px; */
+        width: 510px;
+        height: 400px; 
+    }
+    .titulo_cont{
+        font-size: 30px;
+    }
+    .parrafo_cont{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width: 600px){
+    .nomb_logo {
+        font-size: 20px;
+    }
+    .cab_nav{
+        width: 100%;
+        padding: 20px;
+    }
+    .logo_img{
+        font-size: 20px;
+        
+    }
+    .cab_nav ul li  {
+        font-size: 12px;
+        padding: 10px 10px;
+        
+        margin-top: 4%;
+    }
+    .contenedor  {
+        margin-top: 1rem;
+        /* top: 300px; */
+        width: 310px;
+        height: 500px;
+        
+        
+    }
+    .titulo_cont{
+        font-size: 30px;
+    }
+    .parrafo_cont{
+        font-size: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    
+}  
+
+
+@media  (max-width: 420px){
+    .nomb_logo {
+        font-size: 13px;
+    }
+    .cab_nav{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .cab_nav ul li  {
+        font-size: 10px;
+        padding: 8px 9px;
+        
+        margin-top: 4%;
+    }
+    .contenedor  {
+        margin-top: 1rem;
+        /* top: 200px; */
+        width: 210px;
+        height: 400px; 
+    }
+    .logo_img{
+        width: 60px;
+        height: 60px;
+        
+    }
+    .titulo_cont{
+        font-size: 20px;
+    }
+    .parrafo_cont{
+        font-size: 20px;
+    }
+    footer{
+        display: flex;
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+    .ubication iframe{
+        display: flex;
+        
+        width: 100px;
+        height: 100px;
+        
+    }
+   
+}
+
+  
